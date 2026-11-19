@@ -1,0 +1,481 @@
+/*--------------------------------------------------------------------- 
+  File Name: macbook.css 
+  Extension for MacBook Laptop Portal - cla Theme Compatible
+  Theme Colors: Primary Accent #48ca95, Brand Indigo #4f4aa6, Dark #121010, Light #f7f7f7
+  Font Families: 'Rajdhani', 'Poppins', 'Dosis'
+---------------------------------------------------------------------*/
+
+/* Brand Logo Enhancement */
+.logo a.brand-macbook {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: none;
+    line-height: 1;
+}
+
+.logo a.brand-macbook i {
+    font-size: 36px;
+    color: #48ca95;
+    transition: transform 0.3s ease;
+}
+
+.logo a.brand-macbook:hover i {
+    transform: scale(1.1);
+}
+
+.logo a.brand-macbook span {
+    color: #48ca95;
+    font-weight: 300;
+}
+
+/* Hero Carousel Image Polish */
+.banner_main .carousel-item .text_img figure {
+    margin: 0;
+    text-align: center;
+}
+
+.banner_main .carousel-item .text_img figure img {
+    max-height: 380px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+    border: 2px solid rgba(72, 202, 149, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.banner_main .carousel-item .text_img figure img:hover {
+    transform: translateY(-5px);
+}
+
+.banner_main .text-bg span.badge-pill-chip {
+    display: inline-block;
+    background: rgba(72, 202, 149, 0.2);
+    color: #48ca95;
+    border: 1px solid #48ca95;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+/* Three Box Feature Cards */
+.three_box .box_text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 25px 30px 25px;
+    transition: all 0.3s ease;
+    border: #48ca95 solid 1.5px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+}
+
+.three_box .box_text:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(72, 202, 149, 0.2);
+    border-color: #4f4aa6;
+}
+
+.three_box .box_text .icon-box {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: rgba(72, 202, 149, 0.12);
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #48ca95;
+    font-size: 32px;
+    transition: all 0.3s ease;
+}
+
+.three_box .box_text:hover .icon-box {
+    background: #48ca95;
+    color: #fff;
+}
+
+.three_box .box_text .feature-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    background: #f1f1f1;
+    color: #4f4aa6;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* Category Filter Tabs for Products */
+.product-filter-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 45px;
+}
+
+.product-filter-btn {
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    color: #333;
+    padding: 8px 22px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product-filter-btn:hover,
+.product-filter-btn.active {
+    background: #48ca95;
+    border-color: #48ca95;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(72, 202, 149, 0.3);
+}
+
+/* Product Box Enhancement */
+.our_products .product_box {
+    background: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 12px;
+    padding: 20px 15px 25px 15px;
+    transition: all 0.35s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.our_products .product_box:hover {
+    border-color: #48ca95;
+    box-shadow: 0 10px 25px rgba(72, 202, 149, 0.18);
+    transform: translateY(-5px);
+}
+
+.our_products .product_box .product_img_wrap {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #fbfbfb;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.our_products .product_box .product_img_wrap img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.our_products .product_box:hover .product_img_wrap img {
+    transform: scale(1.05);
+}
+
+.our_products .product_box .chip-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #4f4aa6;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.our_products .product_box .price-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #48ca95;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.our_products .product_box h3 {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #1a1a1a;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.our_products .product_box .spec-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 18px 0;
+    text-align: left;
+    font-size: 12.5px;
+    color: #666;
+    flex-grow: 1;
+}
+
+.our_products .product_box .spec-list li {
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.our_products .product_box .spec-list li i {
+    color: #48ca95;
+    width: 14px;
+}
+
+.our_products .product_box .btn-specs {
+    display: block;
+    width: 100%;
+    padding: 9px 0;
+    text-align: center;
+    background: transparent;
+    border: 1px solid #48ca95;
+    color: #48ca95;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.our_products .product_box .btn-specs:hover {
+    background: #48ca95;
+    color: #000;
+}
+
+/* Comparison Table Section */
+.comparison_section {
+    padding: 90px 0;
+    background: #fff;
+}
+
+.comparison-wrapper {
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+}
+
+.table-macbook {
+    width: 100%;
+    min-width: 800px;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.table-macbook thead th {
+    background: #4f4aa6;
+    color: #fff;
+    padding: 18px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-macbook thead th:first-child {
+    text-align: left;
+    width: 22%;
+    background: #3b3687;
+}
+
+.table-macbook tbody td {
+    padding: 14px 15px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 13.5px;
+    border-top: 1px solid #eee;
+    color: #444;
+}
+
+.table-macbook tbody td:first-child {
+    text-align: left;
+    font-weight: 600;
+    color: #121010;
+    background: #fbfbfb;
+}
+
+.table-macbook tbody tr:hover td {
+    background-color: #f7fffb;
+}
+
+.table-macbook tbody tr:hover td:first-child {
+    background-color: #eefcf5;
+}
+
+.table-macbook .highlight-chip {
+    color: #4f4aa6;
+    font-weight: 700;
+}
+
+.table-macbook .badge-highlight {
+    background: #48ca95;
+    color: #000;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+/* Technology Deep-Dive Section */
+.tech_section {
+    padding: 90px 0;
+    background: #f7f7f7;
+}
+
+.tech_card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    border-left: 4px solid #48ca95;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.tech_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border-left-color: #4f4aa6;
+}
+
+.tech_card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #121010;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tech_card h4 i {
+    color: #48ca95;
+    font-size: 22px;
+}
+
+.tech_card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* Customer Review Polish */
+.customer_Carousel .test_box i img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #48ca95;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.customer_Carousel .test_box .reviewer-role {
+    color: #48ca95;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Modal Specs Styling */
+.modal-content {
+    border-radius: 12px;
+    border: 2px solid #48ca95;
+}
+
+.modal-header {
+    background: #4f4aa6;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-header .close {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.modal-header .close:hover {
+    opacity: 1;
+}
+
+/* Form Polish */
+.contactus {
+    font-family: 'Poppins', sans-serif;
+}
+
+select.contactus {
+    height: 57px;
+    background: transparent;
+    color: #fff;
+    border: #fff solid 1px;
+    border-radius: 25px;
+    padding: 0 20px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select.contactus option {
+    background: #252525;
+    color: #fff;
+}
+
+.form-alert {
+    display: none;
+    padding: 15px 20px;
+    background: #48ca95;
+    color: #000;
+    font-weight: 600;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Footer Brand */
+.footer .footer-brand-title {
+    font-family: 'Rajdhani', sans-serif;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer .footer-brand-title span {
+    color: #48ca95;
+}
+
+.footer p.brand-tagline {
+    color: #ccc;
+    font-size: 13.5px;
+    line-height: 1.6;
+}
